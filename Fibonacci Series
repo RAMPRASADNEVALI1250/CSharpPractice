@@ -1,0 +1,25 @@
+using System;
+
+namespace Day1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        int zero=0,one=1;
+        int noOFFibinachiNumbers = int.Parse(Console.ReadLine());
+        Console.WriteLine(zero+"\n"+one+" " );
+        int totalSum =0;
+        int previousNumber;
+        for (var i=2;i<noOFFibinachiNumbers;i++)
+        {
+            totalSum=zero+one;
+            System.Console.WriteLine(totalSum+" ");
+            previousNumber=i;
+            zero = one;
+            one = totalSum;
+            
+        }
+       }
+    }
+}
